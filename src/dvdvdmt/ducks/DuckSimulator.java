@@ -6,5 +6,10 @@ public class DuckSimulator {
         mallard.swim();
         mallard.fly();
         mallard.quack();
+
+        Duck model = new ModelDuck();
+        model.fly();
+        model.setFlyBehaviour(new FlyRocketPowered());
+        model.fly();
     }
 }
